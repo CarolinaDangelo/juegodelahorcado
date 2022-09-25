@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Juego del Ahorcado</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="imagenes/juegodelahorcado.jpg" alt="Juego del Ahorcado">
+    </header>
+    <main>
+        <div id="seccion-ahorcado" class="canvas">
+            <h2 class="bienvenida">Bienvenido!<br>Presione "Nuevo juego"<br>para iniciar una partida.</h2>
+            <h2 class="ganaste ocultar">Felicitaciones!<br>¡GANASTE!</h2>
+            <h2 class="perdiste ocultar">¡PERDISTE!<br>Vuelve a intentarlo.</h2>
+            <canvas class="canvas2 ocultar" id="horca" height="550px" width="500px"></canvas>
+            <div class="subrayado"></div>
+        </div>    
+
+        <div class="botones">
+            <input class="boton-nuevo" type="button" value="Nuevo juego" id="btn-nuevoJuego">
+            <input  class="boton-desistir" type="button" value="Desistir" id="btn-desistir">
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer-text">&copy Carolina D'Angelo para Alura One Education</p>
+        <a href="https://www.linkedin.com/in/carolina-d-angelo/"><img class="icono" src="imagenes/Icono-In.png" alt="LinkedIn" width="50px"></a>
+        <a href="https://github.com/CarolinaDangelo"><img class="icono" src="imagenes/Icono-Git.png" alt="GitHub" width="50px"></a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
